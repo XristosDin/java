@@ -1,0 +1,1 @@
+ALTER TABLE appointments RENAME COLUMN "dayTime" TO "day_time";

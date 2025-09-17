@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patient Home</title>
+  <link rel="stylesheet" href="PatientHome.css">
+  <script src="PatientHome.js" defer></script>
+</head>
+<body>
+<div class="container">
+  <!-- Εδώ θα εμφανιστεί το όνομα -->
+  <h1 id="welcomeText">Welcome, Patient</h1>
+
+  <div class="section">
+    <h2>Find Available Appointments</h2>
+    <label for="specialitySelect">Select Speciality:</label>
+    <select id="specialitySelect">
+      <option value="Pathologist">Pathologist</option>
+      <option value="Ophthalmologist">Ophthalmologist</option>
+      <option value="Orthopedics">Orthopedics</option>
+    </select>
+    <button id="searchAppointments">Search</button>
+  </div>
+
+  <div class="section">
+    <h2>Available Appointments</h2>
+    <table id="availableAppointmentsTable">
+      <thead>
+      <tr>
+        <th>Doctor</th>
+        <th>Date & Time</th>
+        <th>Fee</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr><td colspan="4">No available appointments.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>My Appointments</h2>
+    <table id="myAppointmentsTable">
+      <thead>
+      <tr>
+        <th>Doctor</th>
+        <th>Speciality</th>
+        <th>Date & Time</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr><td colspan="4">No appointments found.</td></tr>
+      </tbody>
+    </table>
+
+    <!-- LOG OUT πάει στη Main Page -->
+    <a href="../Main_Page/index.html" class="button return">Log Out</a>
+  </div>
+</div>
+</body>
+</html>

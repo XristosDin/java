@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Admin Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <script src="admin.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Welcome!</h1>
+    <h3>Register New Doctors into the System</h3>
+</header>
+<main>
+    <div class="admin-container">
+
+        <!-- LOGIN FORM για admin -->
+        <div id="adminAuth">
+            <h3>Admin Authentication Required</h3>
+            <p>Please enter the admin username and password to access the doctor registration form.</p>
+            <form method="post" action="../login">
+                <label for="username">Admin Username:</label>
+                <input type="text" id="username" name="username" required autofocus>
+
+                <label for="password">Admin Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Registration form (φαίνεται αφού γίνει login με admin) -->
+        <form id="doctorForm" style="display: none;">
+            <label for="Name">First Name:</label>
+            <input type="text" id="Name" class="Name" required>
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" class="lastname" required>
+
+            <label for="passwordReg">Password:</label>
+            <input type="password" id="passwordReg" class="password" required>
+
+            <label for="usernameReg">Username:</label>
+            <input type="text" id="usernameReg" class="username" required>
+
+            <label for="Speciality">Doctor Specialty:</label>
+            <select id="Speciality">
+                <option value="Pathologist">Pathologist</option>
+                <option value="Orthopedics">Orthopedics</option>
+                <option value="Ophthalmologist">Ophthalmologist</option>
+            </select>
+
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+
+        <a href="../Main_Page/index.html" class="button return">Return to Home</a>
+    </div>
+</main>
+</body>
+</html>
+
