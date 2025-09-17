@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Doctor Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <script src="admin.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Welcome!</h1>
+    <h3>Register New Doctors into the System</h3>
+</header>
+<main>
+    <div class="admin-container">
+        <div id="adminAuth">
+            <h3>Admin Authentication Required</h3>
+            <p>Please enter the admin password to access the doctor registration form.</p>
+            <label for="adminPassword">Admin Password:</label>
+            <input type="password" id="adminPassword" required autofocus>
+            <button type="button" id="authBtn">Authenticate</button>
+        </div>
+        <form id="doctorForm" style="display: none;">
+            <label for="Name">First Name:</label>
+            <input type="text" id="Name" class="Name" required>
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" class="lastname" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" class="password" required>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" class="username" required>
+
+            <label for="Speciality">Doctor Specialty:</label>
+            <select id="Speciality">
+                <option value="Pathologist">Pathologist</option>
+                <option value="Orthopedics">Orthopedics</option>
+                <option value="Ophthalmologist">Ophthalmologist</option>
+            </select>
+
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+        <a href="../Main_Page/index.html" class="button return">Return to Home</a>
+    </div>
+</main>
+</body>
+</html>
